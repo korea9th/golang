@@ -1,0 +1,9 @@
+{
+	"evaluationfacility": "kisa",
+	"receiptnumber": "kisa-PE-2020-001",
+	"developername": "Don HO \u003cdon.h@free.fr\u003e",
+	"productname": "npp.7.8.6",
+	"description": "Windows 10",
+	"targetdir": "C:\\01.bin\\npp.7.8.6.bin.x64",
+	"hashedalgorithm": "SHA256"
+}

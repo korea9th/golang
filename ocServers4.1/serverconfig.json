@@ -1,0 +1,16 @@
+{
+	"httpip": "127.0.0.1",
+	"httpport": "8080",
+	"httpdir": "httpfiles",
+	"pop3ip": "127.0.0.1",
+	"pop3port": "3110",
+	"pop3dir": "smtpfiles",
+	"ftpip": "127.0.0.1",
+	"ftpport": "2121",
+	"ftpid": "admin",
+	"ftppassword": "123456",
+	"ftpdir": "ftpfiles",
+	"smtpip": "127.0.0.1",
+	"smtpport": "25",
+	"smtpdir": "smtpfiles"
+}

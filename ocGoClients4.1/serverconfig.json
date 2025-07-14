@@ -1,0 +1,23 @@
+{
+	"httpip": "127.0.0.1",
+	"httpport": "8080",
+	"httpfilelist": "filelist.txt",
+	"httpdownloaddir": "httpdownloaded",
+
+	"pop3ip": "127.0.0.1",
+	"pop3port": "3110",
+	"pop3user": "u",
+	"pop3password": "p",
+	"pop3downloaddir": "pop3downloaded",
+	
+	"ftpip": "127.0.0.1",
+	"ftpport": "2121",
+	"ftpid": "admin",
+	"ftppassword": "123456",
+	"ftpdownloaddir": "ftpdownloaded",
+
+	"smtpip": "127.0.0.1",
+	"smtpport": "25",
+	"smtpfilelist": "filelist.txt"
+}
+

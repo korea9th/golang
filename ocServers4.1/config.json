@@ -1,0 +1,9 @@
+{
+	"evaluationfacility": "OCEAN",
+	"receiptnumber": "OCEAN-PE-2020-011",
+	"developername": "Ocean",
+	"productname": "npp.7.9.1",
+	"description": "Windows 10",
+	"targetdir": "C:\\01.bin\\npp.7.9.1",
+	"hashedalgorithm": "SHA512"
+}

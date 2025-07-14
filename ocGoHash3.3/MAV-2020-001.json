@@ -1,0 +1,9 @@
+{
+  "evaluationfacility": "OCEAN",
+  "receiptnumber": "OCEAN-MAV-2020-001",
+  "developername": "㈜aaa",
+  "productname": "OCEAN 1.0 (Linux)",
+  "description": "Ubuntu 18.04 (64bit)",
+  "targetdir": "C:\\04.kisa\\01.MAV\\OCEAN.20201118\\OCEAN_lib",
+  "hashedalgorithm": "SHA512"
+}

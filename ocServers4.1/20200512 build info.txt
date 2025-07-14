@@ -1,0 +1,23 @@
+windows:
+go build
+
+linux(windows에서):
+env GOOS=linux go build
+
+
+GO 에서 지원하는 OS와 아키텍처는 다음과 같습니다.
+$GOOS$GOARCHdarwin386darwinamd64darwinarmdarwinarm64dragonflyamd64freebsd386freebsdamd64freebsdarmlinux386linuxamd64linuxarmlinuxarm64linuxppc64linuxppc64lelinuxmips64linuxmips64lenetbsd386netbsdamd64netbsdarmopenbsd386openbsdamd64openbsdarmplan9386plan9amd64solarisamd64windows386windowsamd64
+
+
+
+# mod 초기화 및 go.mod 파일 생성
+go mod init {package name}
+
+# go.sum 파일 생성
+go build 
+
+# 소스내 의존성을 go.mod 파일에 정리
+go tidy
+
+# go.sum 파일 유효성 검사
+go mod verify

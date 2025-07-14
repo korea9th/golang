@@ -1,0 +1,9 @@
+windows:
+go build
+
+linux(windows에서):
+env GOOS=linux go build
+
+
+GO 에서 지원하는 OS와 아키텍처는 다음과 같습니다.
+$GOOS$GOARCHdarwin386darwinamd64darwinarmdarwinarm64dragonflyamd64freebsd386freebsdamd64freebsdarmlinux386linuxamd64linuxarmlinuxarm64linuxppc64linuxppc64lelinuxmips64linuxmips64lenetbsd386netbsdamd64netbsdarmopenbsd386openbsdamd64openbsdarmplan9386plan9amd64solarisamd64windows386windowsamd64

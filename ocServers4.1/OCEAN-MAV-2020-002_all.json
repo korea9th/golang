@@ -1,0 +1,9 @@
+{
+  "evaluationfacility": "OCEAN",
+  "receiptnumber": "OCEAN-MAV-2020-002",
+  "developername": "aaaa㈜",
+  "productname": "aaa SDK 2.0",
+  "description": "CentOS 7.6 (64bit) all",
+  "targetdir": "C:\\04.kisa\\01.MAV\\aaa.20201118\\centos7.6\\sdk",
+  "hashedalgorithm": "SHA256"
+}
