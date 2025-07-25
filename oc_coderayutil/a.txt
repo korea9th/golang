@@ -1,0 +1,762 @@
+79|79:          String returnUrl = request.getParameter(""return_url"");
+79|79:          String returnUrl = request.getParameter(""return_url"");
+189|189:              String returnUrl = request.getParameter(""return_url"");
+79|79:          String returnUrl = request.getParameter(""return_url"");
+79|79:          String returnUrl = request.getParameter(""return_url"");
+148|148:      public String main(Model model, HttpServletRequest request) {
+18|18:  <spring:message code=""Index.changePassword.rule.word.1"" />${"" ""}
+31|31:  <c:out value=""${rule}"" />,${"" ""}
+40|40:  ${"" ""}<spring:message code=""Index.changePassword.rule.word.5"" />${"" ""}
+40|40:  ${"" ""}<spring:message code=""Index.changePassword.rule.word.5"" />${"" ""}
+9|9:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/api.css${_dc}""/>
+9|9:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/api.css${_dc}""/>
+12|12:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/_api/viewer/jsonTree.css${_dc}""/>
+12|12:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/_api/viewer/jsonTree.css${_dc}""/>
+22|22:  listTotalCount=""${info.totalCount}""
+20|20:  baseParam=""${info.baseParam}""
+21|21:  list=""${info.contents}""
+26|26:  asyncUrl=""${_ctx}/announce/list_async.json""
+17|17:  <cr:input type=""checkbox"" name=""noticeFlag"" id=""noticeFlag"" checked=""${targetArticle.noticeFlag == 1}"" />
+70|70:  baseParam=""${baseParam}""
+71|71:  list=""${contents ne null ? contents : null}""
+72|72:  listTotalCount=""${totalCount ne null ? totalCount : 0}""
+138|138:  namoEditorNewToolbar=""${fnc:escapeXml(namoEditorNewToolbar)}""
+140|140:  namoEditorThemeIconColor=""${fnc:escapeXml(namoEditorThemeIconColor)}""
+132|132:  <div class=""editor-wrap ${editorModule == 1 ? 'crinity' : 'namo'}-wrap"">
+141|141:  mode='${editorType == 0 ? ""editor"" : (editorType == 1 ? ""text"" : ""html"")}'
+136|136:  type=""${editorModule == 1 ? 'crinity' : 'namo' }""
+13|13:  items=""${addressList}""
+137|137:  domain=""${fnc:escapeXml(domain.domainName)}""
+139|139:  namoEditorSkin=""${fnc:escapeXml(namoEditorSkin)}""
+18|18:  useModifyButton=""${!useIntranetMailFlag}""
+13|13:  items=""${addressList}""
+41|41:  listTotalCount=""${attach_totalCount ne null ? attach_totalCount : 0}""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+40|40:  list=""${attach_contents ne null ? attach_contents : null}""
+74|74:  asyncUrl=""${_ctx}/mail/dialog/address/organ/tree_async.json""
+21|21:  baseParam=""${baseParam}""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+23|23:  listTotalCount=""${totalCount}""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+62|62:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+69|69:  rootNode=""${tree}""
+86|86:  <cr:when test=""${useIntranetMailFlag}"">
+197|197:  baseParam=""${baseParam}""
+22|22:  list=""${contents}""
+28|28:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+199|199:  listTotalCount=""${totalCount}""
+198|198:  list=""${contents}""
+204|204:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+292|292:  baseParam=""${baseParam}""
+230|230:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+244|244:  <cr:when test=""${useIntranetMailFlag}"">
+294|294:  listTotalCount=""${totalCount}""
+325|325:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+293|293:  list=""${contents}""
+299|299:  asyncUrl=""${_ctx}/mail/dialog/address/kt/list_async.json""
+12|12:  <link type=""text/css"" rel=""stylesheet"" class=""main-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+13|13:  <link type=""text/css"" rel=""stylesheet"" class=""cal-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/cal.css${_dc}""/>
+86|86:              <button tabindex=""-1"" type=""button"" class=""btn${calReplyType['ACCEPTED'] == calSentReply ? ' disabled' : ''}""
+80|80:  <div id=""container"" class=""calendar ${_useTopMenu ? '' : 'embedded'}"">
+90|90:              <button tabindex=""-1"" type=""button"" class=""btn${calReplyType['DECLINED'] == calSentReply ? ' disabled' : ''}""
+94|94:              <button tabindex=""-1"" type=""button"" class=""btn${calReplyType['TENTATIVE'] == calSentReply ? ' disabled' : ''}""
+130|130:  rootNode=""${tree}""
+12|12:  <link type=""text/css"" rel=""stylesheet"" class=""main-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+12|12:  <link type=""text/css"" rel=""stylesheet"" class=""main-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+13|13:  <link type=""text/css"" rel=""stylesheet"" class=""cal-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/cal.css${_dc}""/>
+13|13:  <link type=""text/css"" rel=""stylesheet"" class=""cal-theme"" href=""${_ctx}/resources/pages/common/css/${_theme}/cal.css${_dc}""/>
+62|62:  <cr:body cssClass=""calendar ${domain.useFooter eq 1 ? '' : 'notFooter'}"">
+135|135:  asyncUrl=""${_ctx}/cal/tree_async.json""
+10|10:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/dialog.css${_dc}""/>
+46|46:  <div class='formInfo ${simplemode ? ""r3-hidden"" : """" }'>
+74|74:  <div class='formInfo ${simplemode ? ""r3-hidden"" : """"}'>
+122|122:  <div class='formInfo ${simplemode ? ""r3-hidden"" : """" }'>
+9|9:  rootNode=""${tree}""
+10|10:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/dialog.css${_dc}""/>
+9|9:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+98|98:  <div class='formInfo ${simplemode ? ""r3-hidden"" : """" }'>
+9|9:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+14|14:  asyncUrl=""${_ctx}/card/move_async.json""
+9|9:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mainframe.css${_dc}""/>
+23|23:  <a class=""webmanual btn"" target=""_blank"" href=""${pageContext.request.contextPath}/file/manualDownload"">
+29|29:  <a class=""webmanual btn"" target=""_blank"" href=""${pageContext.request.contextPath}/file/imanualDownload"">
+16|16:  <jsp:setProperty property=""time"" name=""date"" value='${loginHistory.list[1].actionTime}' />
+121|121:  <jsp:setProperty property=""time"" name=""date"" value='${loginHistory.list[0].actionTime}' />
+189|189:     href=""${pageContext.request.contextPath}/file/manualDownload""
+116|116:  <jsp:setProperty property=""time"" name=""date"" value='${loginHistory.list[1].actionTime}' />
+52|52:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.approvalChangeFontSize(13);"" />
+53|53:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.approvalChangeFontSize(14);"" />
+54|54:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.approvalChangeFontSize(15);"" />
+30|30:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.attachedChangeRow(10);"" />
+50|50:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.approvalChangeFontSize(11);"" />
+31|31:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.attachedChangeRow(20);"" />
+51|51:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.approvalChangeFontSize(12);"" />
+32|32:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.attachedChangeRow(30);"" />
+29|29:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+33|33:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.attachedChangeRow(40);"" />
+30|30:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.attachedChangeRow(10);"" />
+34|34:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.attachedChangeRow(50);"" />
+31|31:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.attachedChangeRow(20);"" />
+34|34:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.attachedChangeRow(50);"" />
+32|32:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.attachedChangeRow(30);"" />
+37|37:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.attachedChangeRow(11);"" />
+38|38:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.attachedChangeRow(12);"" />
+33|33:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.attachedChangeRow(40);"" />
+39|39:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.attachedChangeRow(13);"" />
+36|36:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+40|40:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.attachedChangeRow(14);"" />
+41|41:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.attachedChangeRow(15);"" />
+11|11:  name=""${fnc:escapeXml(addressType)}""
+15|15:  title=""${fnc:escapeXml(title)}""
+20|20:  useModifyButton=""${!useIntranetMailFlag}""
+33|33:  name=""${fnc:escapeXml(addressType)}""
+12|12:  id=""adr-${fnc:escapeXml(addressType)}-ipt""
+36|36:  items=""${addressList}""
+14|14:  items=""${addressList}""
+56|56:  target=""adr-${fnc:escapeXml(addressType)}-ipt""
+34|34:  id=""adr-${fnc:escapeXml(addressType)}-ipt""
+74|74:  customBtnTitle=""${cr:getMessage('Mail.compose.address.recently')}""
+37|37:  title=""${fnc:escapeXml(title)}""
+78|78:  secondBtnTitle=""${cr:getMessage('Mail.compose.address.important')}""
+42|42:  useModifyButton=""${!useIntranetMailFlag}""
+55|55:  id=""ac_${fnc:escapeXml(addressType)}""
+96|96:  ${cr:getMessage('Common.organ')} : <cr:if test=""@{r.name}"">""<c:out value=""@{r.name}""/>""&nbsp;</cr:if>&lt;<c:out value=""@{r.email}""/>&gt;<cr:if test=""@{r.organName}""> :: <c:out value=""@{r.organName}""/></cr:if><cr:if test=""@{r.positionName}""> / <c:out value=""@{r.positionName}""/></cr:if>
+57|57:  queryType=""${fnc:escapeXml(quickAdrSearchType)}""
+102|102:  ${cr:getMessage('Common.card')} : <cr:if test=""@{r.name}""><c:out value=""@{r.name}""/>&nbsp;</cr:if>&lt;<c:out value=""@{r.email}""/>&gt;
+69|69:  useSameNameAlert=""${useSameNameAlert}""
+106|106:  ${cr:getMessage('Mail.compose.contact.group')} : <cr:if test=""@{r.groupName}""><c:out value=""@{r.groupName}""/></cr:if>
+112|112:  <cr:when test=""${useIntranetMailFlag}"">
+93|93:  ${cr:getMessage('Common.organ')} : <c:out value=""@{r.emailHideAdr}""/>
+113|113:  ${cr:getMessage('Mail.compose.recently')} : <c:out value=""@{r.emailHideAdr}""/>
+116|116:  ${cr:getMessage('Mail.compose.recently')} : <cr:if test=""@{r.name}""><c:out value=""@{r.name}""/>&nbsp;</cr:if>&lt;<c:out value=""@{r.email}""/>&gt;
+122|122:  ${cr:getMessage('Mail.compose.contact.shared')} : <cr:if test=""@{r.name}""><c:out value=""@{r.name}""/>&nbsp;</cr:if>&lt;<c:out value=""@{r.email}""/>&gt; :: <cr:if test=""@{r.groupName}""><c:out value=""@{r.groupName}""/></cr:if>
+146|146:  ${cr:getMessage('Mail.compose.contact.public')} : <cr:if test=""@{r.name}""><c:out value=""@{r.name}""/>&nbsp;</cr:if>&lt;<c:out value=""@{r.email}""/>&gt;<cr:if test=""@{r.groupName}""> :: <c:out value=""@{r.groupName}""/></cr:if>
+126|126:  ${cr:getMessage('Mail.compose.dept')} : <c:out value=""@{r.organName}""/>
+49|49:  baseParam=""${baseParam ne null ? baseParam : null}""
+130|130:  ${cr:getMessage('Common.group')} : <c:out value=""@{r.groupName}""/>
+51|51:  listTotalCount=""${totalCount ne null ? totalCount : 0}""
+136|136:  <cr:when test=""${useIntranetMailFlag}"">
+62|62:  <cr:col name=""status"" title=""${cr:getMessage('Mail.compose.result.uploadStatus')}"" width=""80px"" align=""center"" />
+50|50:  list=""${contents ne null ? contents : null}""
+63|63:  <cr:col name=""fileSize"" title=""${cr:getMessage('Common.volume')}"" width=""100px"" align=""center"" type=""datasize"" datasizeStartUnit=""B"" />
+61|61:  <cr:col name=""fileName"" title=""${cr:getMessage('Common.name')}"" width=""*"" align=""left"" />
+64|64:  <cr:col name=""type"" title=""${cr:getMessage('Mail.upload.mode')}"" width=""180px"" align=""center"" />
+40|40:  <cr:context-menu text=""${cr:getMessage('Assistant.templateType.spelling')}"" onClick=""_common.openAIassistantPopup(2)"" />
+7|7:  <div class=""grp m-compose ${defaultPage eq 'compose' ? '':'x-hidden' }"">
+7|7:  <div class=""qm_wrap ra_wrap ia_wrap ${layoutConfig.quickMenu ? 'qm':'' } - ${layoutConfig.recentlyAddress ? 'ra':''} "">
+39|39:  <cr:context-menu text=""${cr:getMessage('Assistant.templateType.subject')}"" onClick=""_common.openAIassistantPopup(1)"" />
+7|7:  <div class=""grp m-list ${defaultPage eq 'list' ? '':'x-hidden' }"">
+7|7:  <div class=""qm_wrap ra_wrap ia_wrap ${layoutConfig.quickMenu ? 'qm':'' } - ${layoutConfig.recentlyAddress ? 'ra':''} "">
+10|10:  <cr:input tabindex=""-1"" type=""checkbox"" id=""lst-chk-btn"" title=""${cr:getMessage('Mail.tbar.checkbox')}"" onClick=""_tbar.checkMode('toggle');"" />
+20|20:  <cr:context-menu text=""${cr:getMessage('CheckList.all')}"" onClick=""_tbar.checkMode('all');"" />
+80|80:  <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Common.readMail')}"" value=""seen"" onClick=""_tbar.toggleFilter(this, 'seen');""/>
+21|21:  <cr:context-menu text=""${cr:getMessage('CheckList.seen')}"" onClick=""_tbar.checkMode('seen');"" />
+81|81:  <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Mail.tbar.filter')}"" value=""attach"" onClick=""_tbar.toggleFilter(this, 'attach');""/>
+22|22:  <cr:context-menu text=""${cr:getMessage('CheckList.unSeen')}"" onClick=""_tbar.checkMode('unseen');"" />
+82|82:  <cr:context-menu cssClass=""star_important"" name=""chk_f"" text=""${cr:getMessage('Common.importantMail')}"" value=""important"" useSubContext=""true"">
+23|23:  <cr:context-menu text=""${cr:getMessage('Common.important')}"" onClick=""_tbar.checkMode('important');"" />
+120|120:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.remove.batch')}"" cssClass=""folder_only"" onClick=""_tbar.batchClean();""/>
+24|24:  <cr:context-menu text=""${cr:getMessage('CheckList.unimportant')}"" onClick=""_tbar.checkMode('noimportant');"" />
+123|123:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.remove.batch')}"" cssClass=""folder_only"" onClick=""_tbar.batchClean();"" hidden=""true""/>
+25|25:  <cr:context-menu text=""${cr:getMessage('CheckList.unselect.1')}"" onClick=""_tbar.checkMode('clear');"" />
+126|126:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.internal')}"" onClick=""_tbar.internalTransfer();""/>
+79|79:  <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Common.unreadMail')}"" value=""unseen"" onClick=""_tbar.toggleFilter(this, 'unseen');""/>
+142|142:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.changeFontSize(12);""/>
+116|116:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.cleaning')}"" onClick=""_tbar.cleaning();""/>
+143|143:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.changeFontSize(13);""/>
+117|117:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.lastcleaning')}"" onClick=""_tbar.lastMailCleaning();""/>
+150|150:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}""/>
+129|129:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+150|150:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}""/>
+130|130:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);""/>
+87|87:  class=""btn${calReplyType['DECLINED'] == calSentReply ? ' disabled' : ''}""
+130|130:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);""/>
+94|94:  class=""btn${calReplyType['TENTATIVE'] == calSentReply ? ' disabled' : ''}""
+131|131:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);""/>
+122|122:  class=""btn${calReplyType['DECLINED'] == calSentReply ? ' disabled' : ''}""
+162|162:  onclick=""_cal.goCalendarMgr(event, '${requester}')"">
+131|131:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);""/>
+226|226:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+132|132:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);""/>
+227|227:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+132|132:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);""/>
+133|133:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);""/>
+227|227:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+228|228:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+133|133:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);""/>
+134|134:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);""/>
+228|228:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+134|134:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);""/>
+229|229:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+136|136:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup')}"" useSubContext=""true"">
+229|229:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+137|137:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);""/>
+230|230:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+230|230:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+137|137:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);""/>
+231|231:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+138|138:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);""/>
+234|234:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+138|138:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);""/>
+140|140:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+234|234:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+141|141:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.changeFontSize(11);""/>
+235|235:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+144|144:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.changeFontSize(14);""/>
+237|237:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+240|240:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.changeFontSize(13);"" />
+145|145:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.changeFontSize(15);""/>
+147|147:  <cr:context-menu text=""${cr:getMessage('Preferences.view.read.screen')}"" useSubContext=""true"">
+245|245:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+245|245:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+148|148:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}""/>
+246|246:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+148|148:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}""/>
+246|246:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+149|149:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}""/>
+247|247:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+149|149:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}""/>
+80|80:  class=""btn${calReplyType['ACCEPTED'] == calSentReply ? ' disabled' : ''}""
+247|247:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+115|115:  class=""btn${calReplyType['ACCEPTED'] == calSentReply ? ' disabled' : ''}""
+272|272:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.to')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'adrTo'})"" />
+180|180:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.from')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'adrFrom'})""/>
+273|273:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+181|181:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})""/>
+94|94:  <cr:context id=""btn-v-more-list${fnc:escapeXml(viewType)}"" 
+181|181:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})""/>
+273|273:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+182|182:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.tbar.sort.time')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'timeMillis'})"" selected=""true""/>
+99|99:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.mailToContent')}"" onClick=""_tbar.resendContent();"" />
+183|183:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.size')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'msgSize'})""/>
+101|101:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.newWindow')}"" onClick=""_tbar.popupMail('view');"" />
+274|274:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.tbar.sort.time')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'timeMillis'})"" selected=""true"" />
+231|231:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+233|233:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup')}"" useSubContext=""true"">
+105|105:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewOrigin')}"" onClick=""_tbar.openEML();"" />
+235|235:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+275|275:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.size')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'msgSize'})"" />
+238|238:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.changeFontSize(11);"" />
+107|107:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.utf8')}"" onClick=""_tbar.changeCharset('utf-8');"" />
+109|109:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.euckr')}"" onClick=""_tbar.changeCharset('euc-kr');"" />
+239|239:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.changeFontSize(12);"" />
+111|111:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.big5')}"" onClick=""_tbar.changeCharset('big5');"" />
+241|241:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.changeFontSize(14);"" />
+113|113:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.shiftjis')}"" onClick=""_tbar.changeCharset('shift-jis');"" />
+242|242:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.changeFontSize(15);"" />
+297|297:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+244|244:  <cr:context-menu text=""${cr:getMessage('Preferences.view.read.screen')}"" useSubContext=""true"">
+298|298:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+8|8:  <div class=""grp m-view ${defaultPage eq 'view' ? '':'x-hidden' }"">
+86|86:  <cr:context-menu text=""${cr:getMessage('Assistant.templateType.summary')}"" onClick=""_common.openAIassistantPopup(3)"" />
+298|298:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+87|87:  <cr:context-menu text=""${cr:getMessage('Assistant.templateType.translate')}"" onClick=""_common.openAIassistantPopup(4)"" />
+299|299:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+95|95:  target=""btn-v-more${fnc:escapeXml(viewType)}""
+185|185:  <cr:context id=""btn-v-more-share-list${fnc:escapeXml(viewType)}"" 
+104|104:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.saveToPc')}"" onClick=""_tbar.downloadMail('view')"" />
+190|190:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.mailToContent')}"" id=""resendContent"" onClick=""_tbar.resendContent();"" />
+106|106:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding')}"" useSubContext=""true"">
+192|192:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.newWindow')}"" onClick=""_tbar.popupMail('view');"" />
+108|108:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.iso')}"" onClick=""_tbar.changeCharset('iso-8859-1');"" />
+195|195:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.saveToPc')}"" id=""downloadMail"" onClick=""_tbar.downloadMail('view')"" />
+110|110:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.gb2313')}"" onClick=""_tbar.changeCharset('gb2312');"" />
+196|196:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewOrigin')}"" onClick=""_tbar.openEML();"" />
+198|198:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.utf8')}"" onClick=""_tbar.changeCharset('utf-8');"" />
+295|295:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+201|201:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.gb2313')}"" onClick=""_tbar.changeCharset('gb2312');"" />
+112|112:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.eucjp')}"" onClick=""_tbar.changeCharset('euc-jp');"" />
+203|203:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.eucjp')}"" onClick=""_tbar.changeCharset('euc-jp');"" />
+296|296:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+307|307:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.changeFontSize(11);"" />
+296|296:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+308|308:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.changeFontSize(12);"" />
+297|297:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+311|311:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.changeFontSize(15);"" />
+299|299:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+186|186:  target=""btn-v-more-share${fnc:escapeXml(viewType)}""
+49|49:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.list.head.time.sent')}"" onClick=""_tbar.toggleSortDir({el : this, mode: 'rcpt', sortField : 'timeSent'})"" selected=""true"" />
+300|300:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+339|339:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.size')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'msgSize'})"" />
+300|300:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+362|362:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+363|363:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+302|302:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup')}"" useSubContext=""true"">
+363|363:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+303|303:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+197|197:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding')}"" useSubContext=""true"">
+7|7:  <div class=""qm_wrap ra_wrap ${layoutConfig.quickMenu ? 'qm':''}"">
+303|303:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+364|364:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+304|304:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+365|365:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+199|199:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.iso')}"" onClick=""_tbar.changeCharset('iso-8859-1');"" />
+366|366:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+200|200:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.euckr')}"" onClick=""_tbar.changeCharset('euc-kr');"" />
+367|367:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+304|304:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+371|371:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+202|202:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.big5')}"" onClick=""_tbar.changeCharset('big5');"" />
+373|373:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+306|306:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+376|376:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.changeFontSize(13);"" />
+204|204:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.encoding.shiftjis')}"" onClick=""_tbar.changeCharset('shift-jis');"" />
+381|381:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+309|309:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.changeFontSize(13);"" />
+381|381:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+310|310:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.changeFontSize(14);"" />
+382|382:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+47|47:  <cr:context-menu text=""${cr:getMessage('Common.sort')}"" disabled=""true"" /> <%-- 정렬 --%>
+382|382:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+336|336:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.to')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'adrTo'})"" />
+383|383:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+337|337:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+337|337:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+383|383:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+408|408:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.to')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'adrTo'})"" />
+338|338:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.tbar.sort.time')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'timeMillis'})"" selected=""true"" />
+409|409:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+364|364:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+409|409:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+365|365:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+410|410:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.tbar.sort.time')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'timeMillis'})"" selected=""true"" />
+366|366:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+411|411:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.size')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'msgSize'})"" />
+367|367:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+457|457:  <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Common.readMail')}"" value=""seen"" onClick=""_tbar.toggleFilter(this, 'seen');"" />
+369|369:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup')}"" useSubContext=""true"">
+458|458:              <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Mail.tbar.filter')}"" value=""attach"" onClick=""_tbar.toggleFilter(this, 'attach');"" />
+370|370:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+482|482:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+370|370:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+483|483:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+371|371:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+485|485:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+374|374:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.changeFontSize(11);"" />
+485|485:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_tbar.changeRow(30);"" />
+375|375:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.changeFontSize(12);"" />
+486|486:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+377|377:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.changeFontSize(14);"" />
+486|486:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_tbar.changeRow(40);"" />
+378|378:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.changeFontSize(15);"" />
+487|487:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+380|380:  <cr:context-menu text=""${cr:getMessage('Preferences.view.read.screen')}"" useSubContext=""true"">
+487|487:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_tbar.changeRow(50);"" />
+456|456:  <cr:context-menu type=""checkbox"" name=""chk_f"" text=""${cr:getMessage('Common.unreadMail')}"" value=""unseen"" onClick=""_tbar.toggleFilter(this, 'unseen');"" />
+489|489:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup')}"" useSubContext=""true"">
+459|459:              <cr:context-menu cssClass=""star_important"" name=""chk_f"" text=""${cr:getMessage('Common.importantMail')}"" value=""important"" useSubContext=""true"">
+490|490:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+483|483:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_tbar.changeRow(10);"" />
+491|491:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+484|484:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+495|495:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_tbar.changeFontSize(12);"" />
+484|484:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_tbar.changeRow(20);"" />
+496|496:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_tbar.changeFontSize(13);"" />
+490|490:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.on')}"" type=""radio"" name=""listgroup"" value=""1"" selected=""${mailGrouping == 1 ? true : false}"" onClick=""_tbar.changeGrouping(true);"" />
+24|24:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewList')}"" useSubContext=""true"">
+491|491:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.viewGroup.off')}"" type=""radio"" name=""listgroup"" value=""0"" selected=""${mailGrouping == 0 ? true : false}"" onClick=""_tbar.changeGrouping(false);"" />
+25|25:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_search.changeRow(10);""/>
+493|493:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+494|494:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_tbar.changeFontSize(11);"" />
+26|26:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_search.changeRow(20);""/>
+27|27:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_search.changeRow(30);""/>
+497|497:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_tbar.changeFontSize(14);"" />
+536|536:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.from')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'adrFrom'})"" />
+498|498:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_tbar.changeFontSize(15);"" />
+28|28:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_search.changeRow(40);""/>
+500|500:  <cr:context-menu text=""${cr:getMessage('Preferences.view.read.screen')}"" useSubContext=""true"">
+537|537:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+501|501:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+29|29:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_search.changeRow(50);""/>
+501|501:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.list')}"" value=""0"" onClick=""_tbar.changeView('all');"" selected=""${mailPageLayout == 0}"" />
+537|537:  <cr:context-menu type=""radio"" name=""chk_s"" hidden=""${!layoutConfig.sort_subject}"" text=""${cr:getMessage('Common.subject')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'subject'})"" />
+502|502:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+538|538:  <cr:context-menu type=""radio"" name=""chk_s"" id=""time"" text=""${cr:getMessage('Mail.tbar.sort.time')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'timeMillis'})"" selected=""true"" />
+502|502:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.vertical')}"" value=""2"" onClick=""_tbar.changeView('vertical');"" selected=""${mailPageLayout == 2}"" />
+503|503:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+33|33:  <cr:context-menu text=""12px"" type=""radio"" name=""fontsize"" value=""12"" selected=""${mailListFontSize == 12 ? true : false}"" onClick=""_search.changeFontSize(12);""/>
+503|503:  <cr:context-menu type=""radio"" name=""chk_l"" text=""${cr:getMessage('Preferences.view.read.screen.horizontal')}"" value=""1"" onClick=""_tbar.changeView('horizontal');"" selected=""${mailPageLayout == 1}"" />
+34|34:  <cr:context-menu text=""13px"" type=""radio"" name=""fontsize"" value=""13"" selected=""${mailListFontSize == 13 ? true : false}"" onClick=""_search.changeFontSize(13);""/>
+539|539:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Common.size')}"" onClick=""_tbar.toggleSortDir({el : this, sortField : 'msgSize'})"" />
+25|25:  <cr:context-menu text=""10${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""10"" selected=""${pageRow == 10 ? true : false}"" onClick=""_search.changeRow(10);""/>
+26|26:  <cr:context-menu text=""20${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""20"" selected=""${pageRow == 20 ? true : false}"" onClick=""_search.changeRow(20);""/>
+36|36:  <cr:context-menu text=""15px"" type=""radio"" name=""fontsize"" value=""15"" selected=""${mailListFontSize == 15 ? true : false}"" onClick=""_search.changeFontSize(15);""/>
+27|27:  <cr:context-menu text=""30${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""30"" selected=""${pageRow == 30 ? true : false}"" onClick=""_search.changeRow(30);""/>
+582|582:  ${cr:getMessage('Common.cancel')}
+28|28:  <cr:context-menu text=""40${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""40"" selected=""${pageRow == 40 ? true : false}"" onClick=""_search.changeRow(40);""/>
+29|29:  <cr:context-menu text=""50${cr:getMessage('Common.unit.number')}"" type=""radio"" name=""rownum"" value=""50"" selected=""${pageRow == 50 ? true : false}"" onClick=""_search.changeRow(50);""/>
+31|31:  <cr:context-menu text=""${cr:getMessage('Mail.tbar.fontsize')}"" useSubContext=""true"">
+28|28:  baseParam=""${baseParam}""
+32|32:  <cr:context-menu text=""11px"" type=""radio"" name=""fontsize"" value=""11"" selected=""${mailListFontSize == 11 ? true : false}"" onClick=""_search.changeFontSize(11);""/>
+30|30:  listTotalCount=""${approvalInfo.totalCount}""
+35|35:  <cr:context-menu text=""14px"" type=""radio"" name=""fontsize"" value=""14"" selected=""${mailListFontSize == 14 ? true : false}"" onClick=""_search.changeFontSize(14);""/>
+56|56:  <cr:col title=""${cr:getMessage('Mail.list.head.approvedate')}"" name=""approvalDate"" width=""140px"" align=""left"" />
+59|59:  <cr:col title=""${cr:getMessage('Common.subject')}"" name=""subject"" width=""*"" align=""left"" sortAble=""true"" />
+61|61:  <cr:col title=""${cr:getMessage('Common.size')}"" name=""msgSize"" width=""80px"" align=""left"" type=""datasize"" datasizeStartUnit=""B"" sortAble=""true"" />
+40|40:              listTotalCount=""${attachedInfo.totalCount}""
+67|67:              <cr:col title=""${cr:getMessage('Common.time')}"" name=""timeMillis"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""140px"" align=""left"" sortAble=""true"" datetimeOffset=""${datetimeOffset}""/>
+29|29:  list=""${approvalInfo.contents}""
+67|67:              <cr:col title=""${cr:getMessage('Common.time')}"" name=""timeMillis"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""140px"" align=""left"" sortAble=""true"" datetimeOffset=""${datetimeOffset}""/>
+35|35:  asyncUrl=""${_ctx}/approval/${folderType}/list_async.json""
+35|35:  asyncUrl=""${_ctx}/approval/${folderType}/list_async.json""
+84|84:                              <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.attachUid)}""/>
+55|55:  <cr:col title=""${cr:getMessage('Common.status')}"" name=""approvalStatus"" width=""50px"" align=""center"" />
+21|21:  list=""${contents}""
+57|57:  <cr:col title=""${cr:getMessage('Common.from')}"" name=""adrFrom"" width=""200px"" align=""left"" sortAble=""true"" />
+27|27:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+58|58:  <cr:col title=""${cr:getMessage('Common.to')}"" name=""adrTo"" width=""200px"" align=""left"" sortAble=""true"" />
+53|53:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+60|60:  <cr:col title=""${cr:getMessage('Common.time')}"" name=""timeMillis"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""140px"" align=""left"" sortAble=""true"" datetimeOffset=""${datetimeOffset}"" />
+21|21:  list=""${contents}""
+60|60:  <cr:col title=""${cr:getMessage('Common.time')}"" name=""timeMillis"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""140px"" align=""left"" sortAble=""true"" datetimeOffset=""${datetimeOffset}"" />
+22|22:  listTotalCount=""${totalCount}""
+53|53:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+78|78:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.approvalMailUid)}""/>
+67|67:  <cr:when test=""${useIntranetMailFlag}"">
+38|38:              baseParam=""${baseParam}""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+39|39:              list=""${attachedInfo.attachList}""
+86|86:  asyncUrl=""${_ctx}/mail/dialog/address/organ/tree_async.json""
+45|45:              asyncUrl=""${_ctx}/mail/attached/list_async.json""
+129|129:  <c:out value=""${mail.content}"" escapeXml=""false"" />
+25|25:  list=""${mailInfo.contents}""
+65|65:              <cr:col title=""${cr:getMessage('Mail.attached.attachName')}"" name=""attachName"" width=""30%"" align=""left"" sortAble=""true""/>
+26|26:  listTotalCount=""${mailInfo.totalCount}""
+66|66:              <cr:col title=""${cr:getMessage('Mail.attached.subject')}"" name=""subject"" width=""40%"" align=""left"" sortAble=""true""/>
+51|51:  <cr:col title=""${cr:getMessage('Mail.subject.recent')}"" name=""subject"" width=""*"" align=""left"" />
+68|68:              <cr:col title=""${cr:getMessage('Common.size')}"" name=""attachSize"" width=""80px"" align=""left"" type=""datasize"" datasizeStartUnit=""B"" sortAble=""true""/>
+90|90:  <button tabindex=""-1"" type=""button"" class=""btn-primary"" onclick=""_tbar.trash();""  style=""${authWrite == 1 ? 'border-radius: 5px;' : ''}"">
+20|20:  baseParam=""${baseParam}""
+26|26:  rootNode=""${tree}""
+22|22:  listTotalCount=""${totalCount}""
+11|11:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+68|68:  <cr:when test=""${useIntranetMailFlag}"">
+11|11:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+20|20:  baseParam=""${baseParam}""
+33|33:  <cr:option value=""${fnc:escapeXml(ca.paperCategoryUid)}""><c:out value=""${ca.title}""/></cr:option>
+27|27:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+56|56:  baseParam=""${baseParam}""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+63|63:  asyncUrl=""${_ctx}/mail/dialog/paper/list_async.json""
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+104|104:  <c:otherwise><c:out value=""${sendForm.content}"" escapeXml=""false"" /></c:otherwise>
+81|81:  rootNode=""${tree}""
+50|50:  baseParam=""${baseParam}""
+24|24:  baseParam=""${mailInfo.baseParam}""
+57|57:  <cr:col title=""${cr:getMessage('Common.name')}"" name=""name"" width=""200px"" align=""center"" />
+50|50:  <cr:col title=""${cr:getMessage('Common.from')}"" name=""adrFrom"" width=""170px"" align=""left"" />
+59|59:  <cr:col title=""${cr:getMessage('Common.status')}"" name=""status"" width=""100px"" align=""center"" />
+52|52:  <cr:col title=""${cr:getMessage('Mail.count')}"" name=""msgSize"" width=""80px"" align=""left"" />
+14|14:  list=""${contents}""
+15|15:  listTotalCount=""${totalCount}""
+88|88:  <div class=""${useSpam ? 'btn-group' : 'btn-one'} left"">
+30|30:  <cr:col title=""${cr:getMessage('Common.name')}"" name=""userName"" width=""160px"" align=""left""/>
+30|30:  asyncUrl=""${_ctx}/mail/dialog/address/organ/tree_async.json?useCustomBtn=true""
+32|32:  <cr:col title=""${cr:getMessage('Personal.email')}"" name=""email"" width=""*"" align=""left""/>
+34|34:  <cr:col title=""${cr:getMessage('Common.to')}"" name=""to"" width=""100px"" align=""center""/>
+14|14:  class=""${status.index == 0 ? 'selected':''}"" 
+36|36:  <cr:col title=""${cr:getMessage('Mail.bcc')}"" name=""bcc"" width=""100px"" align=""center""/>
+11|11:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/popup.css${_dc}""/>
+30|30:  <cr:option value=""default_${fnc:escapeXml(ca.paperCategoryUid)}""><c:out value=""${ca.title}""/></cr:option>
+95|95:  <cr:input type=""checkbox"" name=""to"" value=""${fnc:escapeXml(r.email)}""/>
+57|57:  list=""${contents}""
+11|11:  <meta name=""viewport"" content=""width=device-width, initial-scale=${_scale}, minimum-scale=${_scale}, maximum-scale=${_scale}, user-scalable=no"" />
+58|58:  listTotalCount=""${totalCount}""
+11|11:  <meta name=""viewport"" content=""width=device-width, initial-scale=${_scale}, minimum-scale=${_scale}, maximum-scale=${_scale}, user-scalable=no"" />
+102|102:  <xmp><c:out value=""${sendForm.content}"" escapeXml=""false"" /></xmp>
+15|15:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+51|51:  list=""${contents}""
+15|15:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+52|52:  listTotalCount=""${totalCount}""
+75|75:  asyncUrl=""${_ctx}/card/tree_async.json""
+163|163:  list=""${contents}""
+58|58:  <cr:col title=""${cr:getMessage('Common.upload.progress')}"" name=""progress"" align=""center"" />
+167|167:  asyncUrl=""${_ctx}/card/list_async.json""
+9|9:  name=""${fnc:escapeXml(addressType)}""
+13|13:  baseParam=""${baseParam}""
+19|19:  asyncUrl=""${_ctx}/user/search/userlist.json""
+10|10:  id=""adr-${fnc:escapeXml(addressType)}-ipt""
+31|31:  <cr:col title=""${cr:getMessage('Common.type')}"" name=""type"" width=""120px"" align=""center""/>
+13|13:  title=""${fnc:escapeXml(title)}""
+27|27:  id=""ac_${fnc:escapeXml(addressType)}""
+33|33:  <cr:col title=""${cr:getMessage('Personal.organ')}"" name=""organ"" width=""250px"" align=""left""/>
+90|90:  <cr:when test=""${useIntranetMailFlag}"">
+35|35:  <cr:col title=""${cr:getMessage('Mail.cc')}"" name=""cc"" width=""100px"" align=""center""/>
+49|49:  <cr:input type=""grid-checkbox"" name=""userUid"" value=""${fnc:escapeXml(r.uid)}""/>
+41|41:  <span class=""${r.rcptStatus == 3 ? 'read' : (r.rcptStatus == 1 ? 'unread' : 'fail')}"">
+102|102:  <cr:input type=""checkbox"" name=""cc"" value=""${fnc:escapeXml(r.email)}""/>
+6|6:  <input type=""hidden"" id=""checkUserUid"" value=""${sessionScope.sessionUser.userUid}"">
+109|109:  <cr:input type=""checkbox"" name=""bcc"" value=""${fnc:escapeXml(r.email)}""/>
+11|11:  <meta name=""viewport"" content=""width=device-width, initial-scale=${_scale}, minimum-scale=${_scale}, maximum-scale=${_scale}, user-scalable=no"" />
+18|18:  baseParam=""${baseParam}""
+15|15:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+19|19:  list=""${contents}""
+70|70:  rootNode=""${tree}""
+23|23:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+162|162:  baseParam=""${baseParam}""
+42|42:  <cr:when test=""${useIntranetMailFlag}"">
+164|164:  listTotalCount=""${totalCount}""
+12|12:  items=""${addressList}""
+28|28:  target=""adr-${fnc:escapeXml(addressType)}-ipt""
+44|44:  <i class=""${ccBccExtend == 1 ? 'cr_icon_minus' : 'cr_icon_plus'}""  onclick=""_view.openRecipient(this);""></i>
+51|51:  <cr:when test=""${useIntranetMailFlag}"">
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+114|114:  <cr:when test=""${useIntranetMailFlag}"">
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+57|57:  <i class=""${ccBccExtend == 1 ? 'cr_icon_minus' : 'cr_icon_plus'}""  onclick=""_view.openRecipient(this);""></i>
+20|20:  listTotalCount=""${totalCount}""
+134|134:  <pre><c:out value=""${mail.content}"" escapeXml=""false"" /></pre>
+161|161:  <pre><c:out value=""${mail.content}"" escapeXml=""false"" /></pre>
+8|8:  <jsp:setProperty property=""time"" name=""date"" value='${mail.timeMillis}'/>
+164|164:  <c:out value=""${mail.content}"" escapeXml=""false"" />
+30|30:                  <i class=""${ccBccExtend == 1 ? 'cr_icon_minus' : 'cr_icon_plus'}"" onclick=""_view.openRecipient(this);""></i>
+9|9:  <jsp:setProperty property=""time"" name=""date"" value='${fnc:escapeXml(mail.timeMillis)}' />
+163|163:                          <pre><c:out value=""${mail.content}"" escapeXml=""false"" /></pre>
+13|13:  <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/mobile.css${_dc}""/>
+9|9:  rootNode=""${tree}""
+137|137:  <c:out value=""${mail.content}"" escapeXml=""false"" />
+38|38:  checked=""${paper.defaultPaper == 0}"" />
+166|166:                          <c:out value=""${mail.content}"" escapeXml=""false"" />
+59|59:  type=""${editorModule == 1 ? 'crinity' : 'namo' }""
+62|62:  namoEditorSkin=""${fnc:escapeXml(namoEditorSkin)}""
+14|14:  asyncUrl=""${_ctx}/webfolder/popup_async.json""
+63|63:  namoEditorThemeIconColor=""${fnc:escapeXml(namoEditorThemeIconColor)}""
+47|47:  checked=""${paper.defaultPaper == 1}""/>
+60|60:  domain=""${fnc:escapeXml(domain.domainName)}""
+20|20:  <div class='preview-wrap'>${paper.content}</div>"
+61|61:  namoEditorNewToolbar=""${fnc:escapeXml(namoEditorNewToolbar)}""
+81|81:  checked=""${fnc:escapeXml(!useApprovalForward)}"" />
+79|79:  <div id='orgContent' class='x-hidden' style='display:none; width:0px; height:0px;'>${paper.content}</div>"
+71|71:  listTotalCount=""${fileInfo.totalCount}""
+73|73:  checked=""${fnc:escapeXml(useApprovalForward)}"" />
+69|69:  baseParam=""${fileInfo.baseParam}""
+84|84:  <cr:col title=""${cr:getMessage('Common.name')}"" name=""fileName"" width=""*"" align=""left"" />
+70|70:  list=""${fileInfo.contents}""
+86|86:  <cr:col title=""${cr:getMessage('Common.upload.date')}"" name=""timeStor"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""160px"" align=""left"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+85|85:  <cr:col title=""${cr:getMessage('Common.size')}"" name=""fileSize"" width=""100px"" align=""left"" type=""datasize"" datasizeStartUnit=""B"" />
+87|87:  <cr:col title=""${cr:getMessage('Preferences.mailbox.header.expired')}"" name=""timeExpire"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""160px"" align=""left"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+87|87:  <cr:col title=""${cr:getMessage('Preferences.mailbox.header.expired')}"" name=""timeExpire"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""160px"" align=""left"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+86|86:  <cr:col title=""${cr:getMessage('Common.upload.date')}"" name=""timeStor"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""160px"" align=""left"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+88|88:  <cr:col title=""${cr:getMessage('Preferences.mailbox.header.downloadcount')}"" name=""useCount"" width=""100px"" align=""left"" />
+65|65:  checked=""${typeDetail == 'google'}"" />
+81|81:  checked=""${typeDetail == '2010'}"" />
+73|73:  checked=""${typeDetail == '2007'}"" />
+30|30:  asyncUrl=""${_ctx}/mail/dialog/address/organ/tree_async.json""
+89|89:  checked=""${typeDetail == 'txt'}"" />
+69|69:  listTotalCount=""${grid.totalCount}""
+105|105:  checked=""${importCharset == 'EUC-KR'}"" />
+110|110:  <span>${fnc:escapeXml(n.userName)}</span>
+113|113:  checked=""${importCharset == 'UTF-8'}"" />
+118|118:  <span>${fnc:escapeXml(n.emailHideAdr)}</span>
+26|26:  rootNode=""${tree}""
+119|119:  <div>${fnc:escapeXml(n.email)}</div>
+67|67:  baseParam=""${grid.baseParam}""
+128|128:  <span>${fnc:escapeXml(n.positionName)}</span>
+68|68:  list=""${grid.contents}""
+73|73:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+32|32:  asyncUrl=""${_ctx}/mail/dialog/address/organ/tree_async.json""
+78|78:  baseParam=""${grid.baseParam}""
+97|97:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(n.uid)}""/>
+80|80:  listTotalCount=""${grid.totalCount}""
+106|106:  <cr:when test=""${useIntranetMailFlag}"">
+108|108:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(n.uid)}""/>
+113|113:  <span>${fnc:escapeXml(n.positionName)}</span>
+115|115:  <span>${fnc:escapeXml(n.email)}</span>
+122|122:  <cr:when test=""${useIntranetMailFlag}"">
+125|125:  <span>${fnc:escapeXml(n.userName)}</span>
+27|27:  <span class=""forwardDate ${mailForward.dateChecked == 1 ? '' : 'cr_hidden'}""><%--  ${f.dateChecked == 1 ? '' : 'cr_hidden'} --%>
+130|130:  <span>${fnc:escapeXml(n.email)}</span>
+25|25:  list=""${contents}""
+28|28:  rootNode=""${tree}""
+26|26:  listTotalCount=""${totalCount}""
+79|79:  list=""${grid.contents}""
+37|37:  <cr:col title=""${cr:getMessage('Preferences.mailbox.securemail.referer')}"" name=""referer"" width=""200px"" align=""left"" />
+84|84:  asyncUrl=""${_ctx}/mail/dialog/address/organ/list_async.json""
+39|39:  <cr:col title=""${cr:getMessage('Preferences.mailbox.securemail.state')}"" name=""state"" width=""100px"" align=""center"" />
+21|21:  value=""${fnc:escapeXml(mailForward.dateChecked)} ""
+40|40:  <cr:col title=""${cr:getMessage('Preferences.mailbox.securemail.ctime')}"" name=""ctime"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""150px"" align=""center"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+24|24:  checked=""${mailForward.dateChecked == 1}""
+67|67:  checked=""${user.config.imapFlag == 0}"" />
+28|28:  <cr:datepicker id=""forwardStartDate"" useToday=""true"" nullAble=""false"" dispFormat=""yyyy.MM.dd"" value=""${fnc:escapeXml(mailForward.startDateFormat)}""/>
+105|105:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_limit""/>_period_limit"" value="""" dispFormat=""yyyy.MM.dd"" />
+30|30:  <cr:datepicker id=""forwardEndDate"" useToday=""true"" nullAble=""false"" dispFormat=""yyyy.MM.dd"" value=""${fnc:escapeXml(mailForward.endDateFormat)}""/>
+171|171:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_start"" value="""" dispFormat=""yyyy.MM.dd"" />
+24|24:  baseParam=""${baseParam}""
+172|172:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_limit"" value="""" dispFormat=""yyyy.MM.dd"" />
+31|31:  asyncUrl=""${_ctx}/preferences/manage/openhistory.json""
+239|239:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_start"" value="""" dispFormat=""yyyy.MM.dd"" />
+38|38:  <cr:col title=""${cr:getMessage('Preferences.mailbox.securemail.clientIp')}"" name=""clientIp"" width=""100px"" align=""center"" />
+68|68:  checked=""${user.config.forwardFlag == 1}"" />
+40|40:  <cr:col title=""${cr:getMessage('Preferences.mailbox.securemail.ctime')}"" name=""ctime"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""150px"" align=""center"" sortAble=""true"" datetimeOffset=""${fnc:escapeXml(datetimeOffset ne null ? datetimeOffset : 0)}"" />
+98|98:  checked=""${user.config.forwardFlagCopy == 0}"" />
+36|36:  <jsp:setProperty property=""time"" name=""date"" value=""${fnc:escapeXml(currentTime)}"" />
+42|42:  value='${v.unusedDate == 0 ? 1 : 0}' 
+112|112:  baseParam=""${grid.baseParam}""
+43|43:  checked=""${v.unusedDate == 0}""
+114|114:  listTotalCount=""${grid.totalCount}""
+49|49:  <cr:datepicker id=""vuser_form_date"" value=""${fnc:escapeXml(dateString)}"" dispFormat=""yyyy.MM.dd"" />
+142|142:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(m.mailUid)}""/>
+59|59:  checked=""${user.config.imapFlag == 1}"" />
+104|104:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_start""/>_period_start"" value="""" dispFormat=""yyyy.MM.dd"" />
+152|152:  <cr:if test=""@{n.organName}""><span>${fnc:escapeXml(n.organName)}</span></cr:if>
+240|240:  <cr:datepicker tabindex=""1"" id=""f${fnc:escapeXml(f.id)}_period_limit"" value="""" dispFormat=""yyyy.MM.dd"" />
+156|156:  <cr:when test=""${useIntranetMailFlag}"">
+76|76:  checked=""${user.config.forwardFlag == 0}"" />
+75|75:    value='${fnc:escapeXml(p.paperUid)}'
+90|90:  checked=""${user.config.forwardFlagCopy == 1}"" />
+76|76:  <tr class=""h-row ${user.config.pop3Flag == 0 ? 'x-hidden':''}"">
+65|65:  checked=""${f.actionType == 1}""
+98|98:  <tr class=""h-row ${user.config.pop3Flag == 0 ? 'x-hidden':''}"">
+120|120:  <tr class=""h-row ${user.config.pop3Flag == 0 ? 'x-hidden':''}"">
+66|66:  value=""${fnc:escapeXml(f.id)}"" />
+62|62:  rootNode=""${tree}""
+142|142:  <tr class=""h-row ${user.config.pop3Flag == 0 ? 'x-hidden':''}"">
+113|113:  list=""${grid.contents}""
+75|75:  checked=""${user.config.subjectFirstFlag == 1}"" />
+84|84:  checked=""${user.config.subjectFirstFlag == 0}"" />
+153|153:  <cr:if test=""@{n.userName}""><span>${fnc:escapeXml(n.userName)}</span></cr:if>
+40|40:  type=""${editorModule == 1 ? 'crinity' : 'namo' }""
+76|76:    checked=""${p.defaultPaper eq 1}"" />
+61|61:  checked=""${user.config.pop3Flag == 1}"" />
+42|42:  namoEditorNewToolbar=""${fnc:escapeXml(namoEditorNewToolbar)}""
+43|43:  namoEditorSkin=""${fnc:escapeXml(namoEditorSkin)}""
+70|70:  checked=""${user.config.pop3Flag == 0}"" />
+62|62:  <xmp id='orgContent' class='x-hidden'>${sign.signContent}</xmp>
+84|84:  checked=""${user.config.pop3ReadMailUid == 0}"" />
+92|92:  checked=""${user.config.pop3ReadMailUid > 1}"" />
+38|38:  <strong class=""${multiInfo eq '1' ? 'mail' : ''}""><spring:message code=""Filter.srcId.${mail.srcId}"" text="""" /></strong>
+106|106:  checked=""${user.config.pop3ReadMark == 1}"" />
+48|48:  <span class=""${mail.actionType eq 0 ? 'font-blue' : 'font-red'} ${multiInfo eq '1' ? ' mail' : ''}"">
+60|60:  <span class=""${logModeResult.actionType eq 0 ? 'font-blue' : 'font-red'} logMode x-hidden"">
+114|114:  checked=""${user.config.pop3ReadMark == 0}"" />
+87|87:  <td class=""${multiInfo eq '1' ? 'mail' : ''}"">
+128|128:  checked=""${user.config.pop3DelOpt == 0}"" />
+23|23:  baseParam=""${baseParam}""
+136|136:  checked=""${user.config.pop3DelOpt == 1}"" />
+25|25:  listTotalCount=""${mailLog.totalCount}""
+150|150:  checked=""${user.config.pop3ExmailOpt == 1}"" />
+34|34:  onAsyncSuccessFunc=""_common.btnOnOff('${userAllowEnable}', '${userBlockEnable}','${userRecoveryEnable}')""
+158|158:  checked=""${user.config.pop3ExmailOpt == 0}"" />
+34|34:  onAsyncSuccessFunc=""_common.btnOnOff('${userAllowEnable}', '${userBlockEnable}','${userRecoveryEnable}')""
+89|89:  <tr class=""h-row ${user.config.subjectFirstFlag == 0 ? 'x-hidden':''}"">
+50|50:  <cr:col title=""${cr:getMessage('Header.regDate')}"" name=""insertDate"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""120px"" align=""center"" sortAble=""true"" />
+41|41:  domain=""${fnc:escapeXml(domain.domainName)}""
+52|52:  <cr:col title=""${cr:getMessage('Header.maillog.subject')}"" name=""subject"" width=""*"" align=""left"" />
+44|44:  namoEditorThemeIconColor=""${fnc:escapeXml(namoEditorThemeIconColor)}""
+53|53:  <cr:col title=""${cr:getMessage('Header.fromEmail')}"" name=""fromEmail"" width=""200px"" align=""center"" />
+65|65:  <xmp class=""x-hidden sign-<c:out value='${s.signUid}'/>"">${s.signContent}</xmp>
+55|55:  <cr:col title=""${cr:getMessage('Header.recoverDate')}"" name=""recoverDate"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""150px"" align=""center"" datetimeOffset=""${datetimeOffset}"" />
+19|19:  <div class='preview-wrap'>${sign.signContent}</div>"
+55|55:  <cr:col title=""${cr:getMessage('Header.recoverDate')}"" name=""recoverDate"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""150px"" align=""center"" datetimeOffset=""${datetimeOffset}"" />
+48|48:  <span class=""${mail.actionType eq 0 ? 'font-blue' : 'font-red'} ${multiInfo eq '1' ? ' mail' : ''}"">
+70|70:   <span class=""${multiInfo eq '1' ? 'mail' : ''} rows""><c:out value=""${mail.mailType eq 2 ? mail.virusName : mail.pattern}""/></span>
+56|56:  <cr:col title=""${cr:getMessage('Header.maillog.pattern')}"" name=""pattern"" width=""150px"" align=""center"" />
+78|78:  <tr class=""${multiInfo eq '1'? ' mail' : ''} "">
+82|82:  <cr:if test=""@{m.mailType} == ${i}"">
+24|24:  list=""${mailLog.contents}""
+19|19:  baseParam=""${filter.baseParam}""
+30|30:  asyncUrl=""${_ctx}/spam/api/maillist.json""
+20|20:  list=""${filter.contents}""
+34|34:  onAsyncSuccessFunc=""_common.btnOnOff('${userAllowEnable}', '${userBlockEnable}','${userRecoveryEnable}')""
+26|26:  asyncUrl=""${_ctx}/spam/api/filterlist.json""
+51|51:  <cr:col title=""${cr:getMessage('Header.mailType')}"" name=""mailType"" width=""90px"" align=""center"" />
+46|46:  <cr:col title=""${cr:getMessage('Header.pattern')}"" name=""pattern"" width=""*px"" align=""left"" />
+54|54:  <cr:col title=""${cr:getMessage('Header.msgSize')}"" name=""msgSize"" width=""100px"" align=""center"" type=""datasize"" datasizeStartUnit=""B"" />
+48|48:  <cr:col title=""${cr:getMessage('Header.register')}"" name=""register"" width=""180px"" align=""left"" />
+107|107:  <cr:when test=""@{m.emlFileExist} && ${userDetailViewEnable}"">
+20|20:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+21|21:  listTotalCount=""${filter.totalCount}""
+20|20:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+45|45:  <cr:col title=""${cr:getMessage('Header.srcId')}"" name=""srcId"" width=""200px"" align=""left"" />
+28|28:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+47|47:  <cr:col title=""${cr:getMessage('Header.matchType')}"" name=""matchType"" width=""180px"" align=""left"" />
+28|28:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+49|49:  <cr:col title=""${cr:getMessage('Header.regDate')}"" name=""regDate"" type=""datetime"" datetimeFormat=""yy.MM.dd HH:mm"" width=""170px"" align=""left"" />
+74|74:  <cr:if test=""@{f.srcId} == ${i}"">
+95|95:  <cr:if test=""@{f.matchType} == ${i}"">
+15|15:  baseParam=""${videoMeetingList.baseParam}""
+31|31:  <cr:col name=""host"" title=""${cr:getMessage('VideoMeeting.list.popup.host')}"" width=""330px"" align=""center"" />
+11|11:  <jsp:setProperty property=""time"" name=""date"" value='${fnc:escapeXml(mailLog.insertDate)}' />
+20|20:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+18|18:  <cr:context-menu text=""${cr:getMessage('CheckList.all')}"" onClick=""_tbar.checkMode('all');"" />
+20|20:  <cr:context-menu text=""${cr:getMessage('CheckList.unimportant')}"" onClick=""_tbar.checkMode('noimportant');"" />
+28|28:      <link type=""text/css"" rel=""stylesheet"" href=""${_ctx}/resources/pages/common/css/${_theme}/login.css${_dc}""/>
+28|28:  <cr:context-menu type=""radio"" name=""chk_v"" text=""${cr:getMessage('Webfolder.search.all')}"" onClick=""_tbar.viewMode('all',this);"" selected=""true"" />
+30|30:  <cr:context-menu type=""radio"" name=""chk_v"" text=""${cr:getMessage('Common.folder')}"" onClick=""_tbar.viewMode('folder',this);"" />
+32|32:  <cr:context-menu type=""radio"" name=""chk_v"" text=""${cr:getMessage('Webfolder.search.ext')}"" onClick=""_tbar.viewMode('ext',this);"" />
+16|16:  list=""${videoMeetingList.videoMeetingList}""
+45|45:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Webfolder.tbar.sort.flag')}"" onClick=""_tbar.sortMode('isFlagged');"" />
+17|17:  listTotalCount=""${videoMeetingList.totalCount}""
+47|47:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Webfolder.tbar.sort.size')}"" onClick=""_tbar.sortMode('fileSize');"" />
+30|30:  <cr:col name=""roomTitle"" title=""${cr:getMessage('VideoMeeting.add.popup.title2')}"" width=""*"" align=""left"" />
+51|51:  <cr:context-menu text=""${cr:getMessage('Preferences.webfolder.list.1')}"" disabled=""true"" /> <%-- 화면보기 --%>
+32|32:  <cr:col name=""startDate"" title=""${cr:getMessage('Mail.date')}"" type=""datetime"" datetimeFormat=""yyyy-MM-dd HH:mm"" width=""160px"" align=""center""/>
+53|53:  <cr:context-menu type=""radio"" name=""chk_f"" text=""${cr:getMessage('Preferences.webfolder.list.option.1')}"" onClick=""_tbar.toggleView(0);"" selected=""${webfolderListOption == 0}""  />
+33|33:  <cr:col name=""state"" title=""${cr:getMessage('VideoMeeting.list.popup.state')}"" width=""90px"" align=""center"" />
+48|48:  <cr:context-menu text=""${cr:getMessage('Webfolder.context.paste')}"" onClick=""_context.paste();""/>
+19|19:  <cr:context-menu text=""${cr:getMessage('Common.importantStar')}"" onClick=""_tbar.checkMode('important');"" />
+18|18:  baseParam=""${baseParam}""
+21|21:  <cr:context-menu text=""${cr:getMessage('CheckList.unselect.1')}"" onClick=""_tbar.checkMode('clear');"" />
+20|20:  listTotalCount=""${totalCount}""
+29|29:  <cr:context-menu type=""radio"" name=""chk_v"" text=""${cr:getMessage('Common.file')}"" onClick=""_tbar.viewMode('file',this);"" />
+31|31:  <cr:context-menu type=""radio"" name=""chk_v"" text=""${cr:getMessage('Common.important')}"" onClick=""_tbar.viewMode('star',this);"" />
+16|16:  asyncUrl=""${_ctx}/webfolder/popup_async.json""
+44|44:  <cr:context-menu text=""${cr:getMessage('Common.sort')}"" disabled=""true"" /> <%-- 정렬 --%>
+25|25:  rootNode=""${tree}""
+46|46:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Webfolder.tbar.sort.name')}"" onClick=""_tbar.sortMode('fileName');"" />
+47|47:  listTotalCount=""${totalCount}""
+48|48:  <cr:context-menu type=""radio"" name=""chk_s"" text=""${cr:getMessage('Webfolder.tbar.sort.date')}"" onClick=""_tbar.sortMode('timeStor');"" selected=""true"" />
+56|56:  <cr:col title=""${cr:getMessage('Common.upload.progress')}"" name=""progress"" align=""center"" />
+53|53:  <cr:context-menu type=""radio"" name=""chk_f"" text=""${cr:getMessage('Preferences.webfolder.list.option.1')}"" onClick=""_tbar.toggleView(0);"" selected=""${webfolderListOption == 0}""  />
+67|67:  <td class='ipt big'><input id='propEmail1' name='propEmail1' value='<c:out value='${card.prop[""EMAIL""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /></td>
+54|54:  <cr:context-menu type=""radio"" name=""chk_f"" text=""${cr:getMessage('Preferences.webfolder.list.option.2')}"" onClick=""_tbar.toggleView(1);"" selected=""${webfolderListOption == 1}"" />
+71|71:  <td class='ipt big'><input id='propCell1' name='propCell1' value='<c:out value='${card.prop[""CELL""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /></td>
+54|54:  <cr:context-menu type=""radio"" name=""chk_f"" text=""${cr:getMessage('Preferences.webfolder.list.option.2')}"" onClick=""_tbar.toggleView(1);"" selected=""${webfolderListOption == 1}"" />
+46|46:  <cr:context-menu text=""${cr:getMessage('Common.copy')}"" onClick=""_context.copy();""/>
+47|47:  <cr:context-menu text=""${cr:getMessage('Webfolder.context.cut')}"" onClick=""_context.cut();""/>
+50|50:  <cr:context-menu id=""share-referrer"" text=""${cr:getMessage('Webfolder.tbar.share.sendreferrer')}"" onClick=""_tbar.referrer();""/>
+19|19:  list=""${contents}""
+25|25:  asyncUrl=""${fnc:escapeXml(_ctx)}/webfolder/link/sharedList.json""
+69|69:  <cr:input type=""grid-checkbox"" value=""${fnc:escapeXml(mailUid)}""/>
+11|11:  rootNode=""${tree}""
+30|30:  asyncUrl=""${_ctx}/webfolder/popup_async.json""
+45|45:  baseParam=""${baseParam}""
+46|46:  list=""${contents}""
+55|55:  <cr:col title=""${cr:getMessage('Common.name')}"" name=""name"" width=""200px"" align=""center"" />
+57|57:  <cr:col title=""${cr:getMessage('Common.status')}"" name=""status"" width=""100px"" align=""center"" />
+62|62:  <input id='propFullName' name='propFullName' value='<c:out value='${card.prop[""FN""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /> 
+62|62:  <input id='propFullName' name='propFullName' value='<c:out value='${card.prop[""FN""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /> 
+67|67:  <td class='ipt big'><input id='propEmail1' name='propEmail1' value='<c:out value='${card.prop[""EMAIL""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /></td>
+71|71:  <td class='ipt big'><input id='propCell1' name='propCell1' value='<c:out value='${card.prop[""CELL""][0]}' />' readonly='${editmode ? """" : ""readonly""}' class='${editmode ? """" : ""readonly""}' /></td>
+206|206:  a.subject.length)return alert(cr.messages[""Mail.compose.validate.error.4""]),!1;try{if(-1<a.subject.indexOf(cr.messages[""Mail.compose.validate.error.5.word""])&&0==uploaderGrid.getRecordCount()&&!confirm(cr.messages[""Mail.compose.validate.error.5""]))return!1}catch(c){}return!0};
+23|23:  (function($){var m={'\b':'\\b','\t':'\\t','\n':'\\n','\f':'\\f','\r':'\\r','""':'\\""','\\':'\\\\'},s={'array':function(x){var a=['['],b,f,i,l=x.length,v;for(i=0;i<l;i+=1){v=x[i];f=s[typeof v];if(f){v=f(v);if(typeof v=='string'){if(b){a[a.length]=','}a[a.length]=v;b=true}}}a[a.length]=']';return a.join('')},'boolean':function(x){return String(x)},'null':function(x){return""null""},'number':function(x){return isFinite(x)?String(x):'null'},'object':function(x){if(x){if(x instanceof Array){return s.arr ...
+11|11:  (function($){var dropShadowZindex=1;$.fn.dropShadow=function(options){var opt=$.extend({left:4,top:4,blur:2,opacity:.5,color:""black"",swap:false},options);var jShadows=$([]);this.not("".dropShadow"").each(function(){var jthis=$(this);var shadows=[];var blur=(opt.blur<=0)?0:opt.blur;var opacity=(blur==0)?opt.opacity:opt.opacity/(blur*8);var zOriginal=(opt.swap)?dropShadowZindex:dropShadowZindex+1;var zShadow=(opt.swap)?dropShadowZindex+1:dropShadowZindex;var shadowId;if(this.id){shadowId=this.id+""_d ...
+3|3:  window.undefined=window.undefined;Andwise={$:function(el){if(el.jquery){return el}else{return $(el)}}};Andwise.apply=function(o,c,defaults){if(defaults){Andwise.apply(o,defaults)}if(o&&c&&typeof c=='object'){for(var p in c){o[p]=c[p]}}return o};(function(){var idSeed=0,toString=Object.prototype.toString,ua=navigator.userAgent.toLowerCase(),check=function(r){return r.test(ua)},DOC=document,docMode=DOC.documentMode,isStrict=DOC.compatMode==""CSS1Compat"",isOpera=check(/opera/),isChrome=check(/\bchro ...
+1425|1425:  } catch(e) {}
+11|11:  (function($){var dropShadowZindex=1;$.fn.dropShadow=function(options){var opt=$.extend({left:4,top:4,blur:2,opacity:.5,color:""black"",swap:false},options);var jShadows=$([]);this.not("".dropShadow"").each(function(){var jthis=$(this);var shadows=[];var blur=(opt.blur<=0)?0:opt.blur;var opacity=(blur==0)?opt.opacity:opt.opacity/(blur*8);var zOriginal=(opt.swap)?dropShadowZindex:dropShadowZindex+1;var zShadow=(opt.swap)?dropShadowZindex+1:dropShadowZindex;var shadowId;if(this.id){shadowId=this.id+""_d ...
+139|139:                          <xmp style='display:inline;'><c:out value=""${mail.content}"" escapeXml=""false"" /></xmp>
+144|144:                                  <xmp><c:out value=""${mail.content}"" escapeXml=""false"" /></xmp>
+146|146:                              <c:otherwise><c:out value=""${mail.content}"" escapeXml=""false"" /></c:otherwise>
+313|313:  <xmp style='display:inline;'><c:out value=""${mail.content}"" escapeXml=""false"" /></xmp>
+324|324:  <div id=""refine-content""><c:out value=""${refineContent}"" escapeXml=""false"" /></div>
+329|329:  <xmp><c:out value=""${mail.content}"" escapeXml=""false"" /></xmp>
+363|363:  <div class=""reply ellipsis""><c:out value=""${email}"" escapeXml=""false"" /></div>
+331|331:  <c:otherwise><c:out value=""${mail.content}"" escapeXml=""false"" /></c:otherwise>
+366|366:  <c:out value=""${email}"" escapeXml=""false"" />
+145|145:  <div id=""orgContent"" class=""cr_hidden""><c:out value=""${content}"" escapeXml=""false"" /></div>
+235|235:  <div id=""attachList"" class=""cr_hidden"" style=""display:none; width:0px; height:0px;""><c:out value=""${attachList}"" escapeXml=""false"" /></div>
+238|238:  <div id=""orgContent"" class=""cr_hidden"" style=""display:none; width:0px; height:0px;""><xmp><c:out value=""${content}"" escapeXml=""false"" /></xmp></div>"
+1|
+1|
+130|130:  <div id=""orgContent"" class=""cr_hidden""><c:out value=""${config.vacationContent}"" escapeXml=""false"" /></div>
+2|2:  !function(){""use strict"";var e={9306:function(e,t,r){var a=r(4901),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a function"")}},5548:function(e,t,r){var a=r(3517),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a constructor"")}},3506:function(e,t,r){var a=r(3925),o=String,n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(""Can't set ""+o(e)+"" as a prototype"")}},6469:function(e,t,r){var a=r(8227),o=r(2360), ..."
+2|2:  !function(){""use strict"";var e={9306:function(e,t,r){var a=r(4901),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a function"")}},5548:function(e,t,r){var a=r(3517),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a constructor"")}},3506:function(e,t,r){var a=r(3925),o=String,n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(""Can't set ""+o(e)+"" as a prototype"")}},6469:function(e,t,r){var a=r(8227),o=r(2360), ..."
+2|2:  !function(){""use strict"";var e={9306:function(e,t,r){var a=r(4901),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a function"")}},5548:function(e,t,r){var a=r(3517),o=r(6823),n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(o(e)+"" is not a constructor"")}},3506:function(e,t,r){var a=r(3925),o=String,n=TypeError;e.exports=function(e){if(a(e))return e;throw new n(""Can't set ""+o(e)+"" as a prototype"")}},6469:function(e,t,r){var a=r(8227),o=r(2360), ..."
+55|55:  <c:out value=""${announce.content}"" escapeXml=""false"" />
+202|202:  <c:out value=""@{r.content}"" escapeXml=""false"" />
+139|139:  <c:out value=""@{r.content}"" escapeXml=""false"" />
+181|181:  <c:out value=""@{r.content}"" escapeXml=""false"" />
+55|55:  <c:out value=""${announce.content}"" escapeXml=""false"" />
+
+
+Total File     : 759
