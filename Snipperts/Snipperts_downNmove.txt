@@ -1,0 +1,11 @@
+const descriptionMeta = document.querySelector('meta[name="title"]');
+const description = descriptionMeta.getAttribute('content');
+
+const novel_content = document.querySelector('#novel_content').innerText;
+const blob = new Blob([novel_content], { type: "text/plain" });
+const a = document.createElement("a");
+a.href = URL.createObjectURL(blob);
+a.download = description + `.txt`;
+a.click();
+
+document.getElementById('goNextBtn').click();

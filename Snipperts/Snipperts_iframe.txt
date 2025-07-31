@@ -1,0 +1,7 @@
+//=========================================
+const myIframe = document.createElement('iframe');
+myIframe.width = 900;
+myIframe.height = 400;
+myIframe.id = "myIframe"
+myIframe.src = document.URL;
+document.querySelector('.content').prepend(myIframe);

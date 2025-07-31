@@ -1,0 +1,36 @@
+
+let count = 392;
+var timer = setInterval(() => {
+  console.log(`남은 시간: ${count}초`);
+  count--;
+
+
+
+var iframe = document.getElementById('myIframe');
+var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+const descriptionMeta = iframeDoc.querySelector('meta[name="title"]');
+const description = descriptionMeta.getAttribute('content');
+
+const novel_content = iframeDoc.querySelector('#novel_content').innerText;
+const blob = new Blob([novel_content], { type: "text/plain" });
+const a = iframeDoc.createElement("a");
+a.href = URL.createObjectURL(blob);
+a.download = description + `.txt`;
+a.click();
+
+  
+for (let i = 0; i < 99999999; i++) {
+}
+
+
+// 내부의 특정 요소 변경
+iframeDoc.getElementById('goNextBtn').click();
+
+  if (count < 0) {
+    clearInterval(timer); // 반복 중지
+    console.log("타이머 종료!");
+  }
+}, 10000);
+//=========================================
+
